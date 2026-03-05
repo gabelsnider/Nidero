@@ -1,18 +1,17 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Detail from './pages/Detail';
-import Home from './pages/Home';
-import Map from './pages/Map';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import DetailPage from './pages/DetailPage/DetailPage';
+import HomePage from './pages/HomePage/HomePage';
+import MapPage from './pages/MapPage/MapPage';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Nidero</h1>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/detail' element={<Detail />} />
-        <Route path='/map' element={<Map />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+    <div>
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/detail' element={<DetailPage />} />
+      <Route path='/map' element={<MapPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
     </div>
   )
 }
