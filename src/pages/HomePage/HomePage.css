@@ -1,0 +1,10 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+}
+
+.link-to-map {
+    position: absolute;
+    top: 10px;
+    left:10px;
+}

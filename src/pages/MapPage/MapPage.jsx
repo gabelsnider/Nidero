@@ -1,5 +1,6 @@
 import './MapPage.css'
 import Map from '@/components/Map/Map'
+import { Link } from 'react-router-dom'
 import { SidebarInput, Sidebar, SidebarContent, SidebarHeader, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 
 function MapPage() {
@@ -13,9 +14,12 @@ function MapPage() {
           <SidebarContent />
         </Sidebar>
         <div className="map-container">
+          <div className='link-home'>
+            <Link to='/'>Nidero</Link>
+          </div>
           <div className="sidebar-trigger">
             <SidebarTrigger />
-          </div>        
+          </div>
           <Map />
         </div>
       </div>
